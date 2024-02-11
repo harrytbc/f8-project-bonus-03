@@ -26,7 +26,7 @@ input {
 
 .container {
     min-height: 100vh;
-    width: 1440px;
+    width: 1170px;
     max-width: calc(100% - 48px);
     margin: 0 auto;
 }
@@ -152,6 +152,7 @@ input {
 .hero-content__watching-btn {
     display: flex;
     align-items: center;
+    flex-shrink: 0;
     gap: 15px;
 }
 
