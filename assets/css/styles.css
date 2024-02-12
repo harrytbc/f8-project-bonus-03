@@ -14,6 +14,7 @@ body {
 /* Common */
 a {
     text-decoration: none;
+    color: currentColor;
 }
 
 button,
@@ -118,7 +119,7 @@ input {
 .hero {
     margin-top: 74px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
 }
 
@@ -192,6 +193,13 @@ input {
     display: flex;
     gap: 20px;
     margin-right: 25px;
+    height: 623px;
+}
+
+.hero-media__img-group {
+    display: flex;
+    gap: 20px;
+    position: absolute;
 }
 
 .hero-media__img {
@@ -199,6 +207,7 @@ input {
     height: 466px;
     object-fit: cover;
     border-radius: 110px;
+    position: relative;
 }
 
 .hero-media__img:nth-child(2) {
@@ -207,25 +216,57 @@ input {
 }
 
 .hero-media__eclipse {
-    position: absolute;
-    left: -156px;
-    top: -122px;
+    position: relative;
     z-index: -1;
+    bottom: -81px;
+}
+
+.hero-media__eclipse:nth-child(2) {
+    position: absolute;
+    left: -130px;
 }
 
 .hero-media__icon {
     position: absolute;
 }
 
-.hero-media__line-first {
+.hero-media__line:nth-of-type(2) {
     position: absolute;
     top: -28px;
     left: -172px;
 }
 
-.hero-media__union {
+.hero-media__line:nth-of-type(4) {
+    position: absolute;
+    top: 234px;
+    left: 44px;
+    transform: rotate(180deg);
+}
+
+.hero-media__union:nth-of-type(1) {
     position: absolute;
     top: -18px;
     left: -210px;
     z-index: 2;
+}
+
+.hero-media__union:nth-of-type(3) {
+    position: absolute;
+    top: 503px;
+    left: 550px;
+    z-index: 2;
+}
+
+/* Brand */
+.brand {
+    margin-top: 42px;
+}
+
+.brand__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #e2eddf;
+    padding: 77px 122px;
+    border-radius: 100px;
 }
