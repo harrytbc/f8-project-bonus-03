@@ -9,6 +9,7 @@ html {
 
 body {
     font-size: 1.6rem;
+    background: #efefef;
 }
 
 /* Common */
@@ -85,7 +86,7 @@ input {
     width: 66px;
     height: 2px;
     background: #152427;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 /* Header */
@@ -403,9 +404,9 @@ input {
     cursor: pointer;
 }
 
-.services__item:hover .services__item-body {
-    padding: 24px 18px 15px;
-    transition: 0.5s all;
+.services__item-images {
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
 }
 
 .services__item-img {
@@ -415,8 +416,21 @@ input {
     border-radius: 20px 20px 0 0;
 }
 
+.services__item:hover .services__item-img {
+    transform: scale(1.3);
+    transition: transform 0.4s;
+    border-radius: 20px 20px 0 0;
+}
+
 .services__item-body {
     padding: 24px 0 15px;
+    background-color: #f1f1f1;
+    border-radius: 0 0 20px 20px;
+}
+
+.services__item:hover .services__item-body {
+    padding: 24px 18px 15px;
+    transition: 0.5s all;
 }
 
 .services__item-heading {
@@ -632,4 +646,83 @@ input {
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.7;
+}
+
+.process {
+    margin-top: 36px;
+}
+
+.process__heading {
+    width: 486px;
+}
+
+.process__list {
+    margin-top: 81px;
+}
+
+.process__item {
+    display: flex;
+    align-items: center;
+    padding: 57px 41px 21px 76px;
+    border-bottom: 3px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right bottom, rgba(131, 161, 125, 1) 0%, rgba(131, 161, 125, 0) 100%);
+}
+
+.process__item:first-child {
+    position: relative;
+}
+
+.process__item:hover {
+    background: #e2eddf;
+    transition: 0.25s all;
+    cursor: pointer;
+    border-radius: 33px;
+    border: none;
+}
+
+.process__item-number {
+    color: #143c3c;
+    font-size: 7.2rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.process__item-infor {
+    margin-left: 47px;
+}
+
+.process__item-heading {
+    color: #152427;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.process__item-more {
+    margin-top: 22px;
+    color: #575d5e;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-decoration: underline;
+    display: inline-block;
+}
+
+.process__item-img {
+    position: absolute;
+    bottom: -30px;
+    right: 192px;
+    width: 450px;
+    height: 444px;
+    object-fit: cover;
+}
+
+.process__item-desc {
+    margin-left: auto;
+    width: 572px;
+    color: #7d8188;
+    font-family: "Public Sans", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.5;
 }
