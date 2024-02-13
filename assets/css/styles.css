@@ -27,7 +27,7 @@ input {
 }
 
 .container {
-    width: 1140px;
+    width: 1240px;
     max-width: calc(100% - 48px);
     margin: 0 auto;
 }
@@ -1015,4 +1015,116 @@ input {
     font-size: 1rem;
     font-weight: 600;
     line-height: 1.2;
+}
+
+/* Footer */
+.footer {
+    margin-top: 32px;
+    padding: 72px 0 50px;
+    background: #143c3c;
+}
+
+.footer__wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 45px;
+}
+
+.footer__wrap::after {
+    position: absolute;
+    bottom: -12px;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    width: 100%;
+    background: #295a5a;
+}
+
+.footer__action {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.footer__row {
+    font-family: "Public Sans", sans-serif;
+    display: flex;
+    gap: 50px;
+    margin-left: auto;
+}
+
+.footer__heading {
+    color: #ffffff;
+}
+
+.footer__input-wrap {
+    width: 354px;
+    position: relative;
+    display: inline-block;
+}
+
+.footer__input {
+    width: 354px;
+    font-size: 1.8rem;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #6a8383;
+    padding: 25px 0 36px;
+    background: transparent;
+}
+
+.footer__input::placeholder {
+    color: #6a8383;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.footer__input-icon {
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+}
+
+.footer__social {
+    margin-top: 47px;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.footer__social-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border: 1px solid #265252;
+    border-radius: 50%;
+}
+
+.footer__social-wrap:hover {
+    background: #a75325;
+    transition: 0.3s all;
+    border: 1px solid transparent;
+}
+
+.footer__column-heading {
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.footer__list {
+    margin-top: 6px;
+}
+
+.footer__item-link {
+    color: #6a8383;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.25;
 }
