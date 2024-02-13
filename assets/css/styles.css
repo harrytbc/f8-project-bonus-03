@@ -102,7 +102,7 @@ input {
 /* Header */
 .header {
     font-family: "Public Sans", sans-serif;
-    min-height: 100vh;
+    height: 100vh;
 }
 
 .fixed-header {
@@ -111,6 +111,7 @@ input {
     top: -16px;
     z-index: 3;
     background: #f1f1f1;
+    overflow: hidden;
 }
 
 .header-top {
@@ -1003,6 +1004,12 @@ input {
     line-height: 26px;
     background: #e2eddf;
     border-radius: 999px;
+}
+
+.article__item-tag:hover {
+    color: #e2eddf;
+    background: #143c3c;
+    transition: 0.3s all;
 }
 
 .article__item-heading {
